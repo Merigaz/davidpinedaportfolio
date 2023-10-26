@@ -4,6 +4,6 @@
 
 @layer base {
     .link-navbar{
-        @apply m-2
+        @apply active:bg-blue-600 rounded-full p-2
     }
 }
