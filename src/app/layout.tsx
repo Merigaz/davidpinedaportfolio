@@ -1,9 +1,10 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
+import { LinksHeader } from '@/components/LinksHeader'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ weight: "400", preload: false })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}><header className="flex justify-center align-middle mt-2"><Navbar /></header>{children}</body>
+      <body className={roboto.className}><header className="flex mt-2 justify-between align-middle"><LinksHeader/><Navbar /><div></div></header>{children}</body>
     </html>
   )
 }

@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-    .link-navbar{
-        @apply active:bg-blue-600 rounded-full p-2
-    }
+  .link-navbar {
+    @apply rounded-full px-2 py-1 m-1;
+  }
+  .active-link-navbar {
+    @apply bg-black text-white rounded-full px-2 py-1 m-1;
+  }
 }
